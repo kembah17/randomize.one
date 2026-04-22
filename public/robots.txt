@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://randomgenerator.one
+
+# Sitemaps
+Sitemap: https://randomgenerator.one/sitemap.xml
