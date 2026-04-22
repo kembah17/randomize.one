@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Random Color Generator — Free Online Color Palette Tool',
   description: 'Generate random colors in HEX, RGB, and HSL formats. Create complementary, analogous, and triadic color palettes. Copy color codes instantly. Free and private.',
-  alternates: { canonical: 'https://randomgenerator.one/random-color-generator' },
+  alternates: { canonical: 'https://randomize.one/random-color-generator' },
   openGraph: {
     title: 'Random Color Generator — Free Online Color Palette Tool',
     description: 'Generate random colors in HEX, RGB, and HSL. Create complementary, analogous, and triadic palettes instantly.',
-    url: 'https://randomgenerator.one/random-color-generator',
+    url: 'https://randomize.one/random-color-generator',
   },
 };
 

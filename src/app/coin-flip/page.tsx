@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Coin Flip Simulator — Free Online Coin Toss Tool',
   description: 'Flip a virtual coin with animated visuals and real-time statistics. Track heads vs tails percentages, flip multiple coins, and view history. Free and private.',
-  alternates: { canonical: 'https://randomgenerator.one/coin-flip' },
+  alternates: { canonical: 'https://randomize.one/coin-flip' },
   openGraph: {
     title: 'Coin Flip Simulator — Free Online Coin Toss Tool',
     description: 'Flip a virtual coin with animated visuals and real-time statistics. Track heads vs tails percentages and flip multiple coins.',
-    url: 'https://randomgenerator.one/coin-flip',
+    url: 'https://randomize.one/coin-flip',
   },
 };
 

@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Random Name Picker — Free Online Raffle & Winner Selector',
   description: 'Pick random names from a list with animated selection. Perfect for raffles, giveaways, classroom activities, and team assignments. Free, fair, and private.',
-  alternates: { canonical: 'https://randomgenerator.one/random-name-picker' },
+  alternates: { canonical: 'https://randomize.one/random-name-picker' },
   openGraph: {
     title: 'Random Name Picker — Free Online Raffle & Winner Selector',
     description: 'Pick random names from a list with animated selection. Perfect for raffles, giveaways, and classroom activities.',
-    url: 'https://randomgenerator.one/random-name-picker',
+    url: 'https://randomize.one/random-name-picker',
   },
 };
 

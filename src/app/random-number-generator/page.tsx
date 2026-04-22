@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Random Number Generator — Free Online Number Randomizer',
   description: 'Generate cryptographically secure random numbers within any range. Supports integers, decimals, bulk generation, no duplicates, and sorting. Free and private.',
-  alternates: { canonical: 'https://randomgenerator.one/random-number-generator' },
+  alternates: { canonical: 'https://randomize.one/random-number-generator' },
   openGraph: {
     title: 'Random Number Generator — Free Online Number Randomizer',
     description: 'Generate cryptographically secure random numbers within any range. Supports integers, decimals, and bulk generation.',
-    url: 'https://randomgenerator.one/random-number-generator',
+    url: 'https://randomize.one/random-number-generator',
   },
 };
 

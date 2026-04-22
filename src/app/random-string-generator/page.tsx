@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Random String Generator — Free Online Password & Token Generator',
   description: 'Generate cryptographically secure random strings with custom character sets. Create passwords, tokens, and unique identifiers. Free, private, browser-based.',
-  alternates: { canonical: 'https://randomgenerator.one/random-string-generator' },
+  alternates: { canonical: 'https://randomize.one/random-string-generator' },
   openGraph: {
     title: 'Random String Generator — Free Online Password & Token Generator',
     description: 'Generate cryptographically secure random strings with custom character sets. Create passwords, tokens, and unique identifiers.',
-    url: 'https://randomgenerator.one/random-string-generator',
+    url: 'https://randomize.one/random-string-generator',
   },
 };
 

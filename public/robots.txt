@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://randomgenerator.one
+Host: https://randomize.one
 
 # Sitemaps
-Sitemap: https://randomgenerator.one/sitemap.xml
+Sitemap: https://randomize.one/sitemap.xml

@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy — RandomGenerator.one',
   description: 'Privacy policy for RandomGenerator.one. Learn how we protect your data. All tools run entirely in your browser with zero data collection.',
-  alternates: { canonical: 'https://randomgenerator.one/privacy' },
+  alternates: { canonical: 'https://randomize.one/privacy' },
   openGraph: {
     title: 'Privacy Policy — RandomGenerator.one',
     description: 'Privacy policy for RandomGenerator.one. All tools run entirely in your browser with zero data collection.',
-    url: 'https://randomgenerator.one/privacy',
+    url: 'https://randomize.one/privacy',
   },
 };
 
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Contact Us</h2>
           <p className="text-text-light leading-relaxed">
-            If you have any questions about this privacy policy or our data practices, please contact us at <span className="text-primary">hello@randomgenerator.one</span>. You can also visit our <Link href="/about" className="text-primary hover:underline">About page</Link> to learn more about RandomGenerator.one.
+            If you have any questions about this privacy policy or our data practices, please contact us at <span className="text-primary">hello@randomize.one</span>. You can also visit our <Link href="/about" className="text-primary hover:underline">About page</Link> to learn more about RandomGenerator.one.
           </p>
         </section>
       </div>

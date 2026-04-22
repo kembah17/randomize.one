@@ -4,7 +4,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://randomgenerator.one'),
+  metadataBase: new URL('https://randomize.one'),
   title: {
     default: 'RandomGenerator.one — Free Online Random Generator Tools',
     template: '%s | RandomGenerator.one',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://randomgenerator.one',
+    url: 'https://randomize.one',
     siteName: 'RandomGenerator.one',
     title: 'RandomGenerator.one — Free Online Random Generator Tools',
     description: 'Free online random generator tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names.',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Free online random generator tools. All processing happens in your browser.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://randomgenerator.one' },
+  alternates: { canonical: 'https://randomize.one' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

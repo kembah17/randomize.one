@@ -3,11 +3,11 @@ export default function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'RandomGenerator.one',
-    url: 'https://randomgenerator.one',
+    url: 'https://randomize.one',
     description: 'Free online random generator tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names — all in your browser.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://randomgenerator.one/?q={search_term_string}',
+      target: 'https://randomize.one/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About — RandomGenerator.one',
   description: 'Learn about RandomGenerator.one, our mission to provide free, private, and secure random generator tools that run entirely in your browser.',
-  alternates: { canonical: 'https://randomgenerator.one/about' },
+  alternates: { canonical: 'https://randomize.one/about' },
   openGraph: {
     title: 'About — RandomGenerator.one',
     description: 'Learn about RandomGenerator.one and our mission to provide free, private random generator tools.',
-    url: 'https://randomgenerator.one/about',
+    url: 'https://randomize.one/about',
   },
 };
 
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Contact</h2>
           <p className="text-text-light leading-relaxed">
-            Have feedback, suggestions, or found a bug? We would love to hear from you. Reach out to us at <span className="text-primary">hello@randomgenerator.one</span> and we will get back to you as soon as possible.
+            Have feedback, suggestions, or found a bug? We would love to hear from you. Reach out to us at <span className="text-primary">hello@randomize.one</span> and we will get back to you as soon as possible.
           </p>
         </section>
       </div>
