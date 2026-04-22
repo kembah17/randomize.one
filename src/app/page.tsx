@@ -49,7 +49,7 @@ export default function HomePage() {
 
       <section className="text-center py-12 sm:py-16">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text mb-4">
-          Free Random Generator Tools
+          Free Randomize Tools
         </h1>
         <p className="text-lg sm:text-xl text-text-light max-w-3xl mx-auto mb-8">
           Generate random numbers, strings, colors, flip coins, roll dice, and pick random names.
@@ -72,7 +72,7 @@ export default function HomePage() {
       </section>
 
       <section id="tools" className="py-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-text text-center mb-8">All Random Generator Tools</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-text text-center mb-8">All Randomize Tools</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tools.map((tool) => (
             <Link
@@ -96,19 +96,19 @@ export default function HomePage() {
 
       <section className="py-12">
         <div className="bg-surface border border-border rounded-xl p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-text mb-4">About Our Random Generator Tools</h2>
+          <h2 className="text-2xl font-bold text-text mb-4">About Our Randomize Tools</h2>
           <div className="space-y-4 text-text-light leading-relaxed">
             <p>
-              RandomGenerator.one provides a comprehensive suite of free online random generator tools designed for everyday use. Whether you need to generate random numbers for statistical sampling, create secure random strings for passwords, flip a coin to make a quick decision, roll dice for your tabletop game, generate random colors for your design project, or pick a random name for a raffle — we have you covered.
+              Randomize.one provides a comprehensive suite of free online randomize tools designed for everyday use. Whether you need to generate random numbers for statistical sampling, create secure random strings for passwords, flip a coin to make a quick decision, roll dice for your tabletop game, generate random colors for your design project, or pick a random name for a raffle — we have you covered.
             </p>
             <p>
-              All of our tools use the Web Crypto API (<code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">crypto.getRandomValues()</code>) to generate cryptographically secure random values. Unlike many random generator websites that rely on <code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">Math.random()</code>, which produces pseudo-random numbers that can be predicted, our tools leverage the operating system's entropy source to produce truly unpredictable results. This makes our generators suitable for security-sensitive applications like password generation and token creation.
+              All of our tools use the Web Crypto API (<code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">crypto.getRandomValues()</code>) to generate cryptographically secure random values. Unlike many randomize websites that rely on <code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">Math.random()</code>, which produces pseudo-random numbers that can be predicted, our tools leverage the operating system's entropy source to produce truly unpredictable results. This makes our generators suitable for security-sensitive applications like password generation and token creation.
             </p>
             <p>
-              Privacy is at the core of everything we build. Every tool on RandomGenerator.one runs entirely in your browser. No data is ever sent to our servers, no results are logged, and no personal information is collected. Your generated numbers, strings, colors, and names stay on your device. We believe that random generation tools should be fast, free, and completely private.
+              Privacy is at the core of everything we build. Every tool on Randomize.one runs entirely in your browser. No data is ever sent to our servers, no results are logged, and no personal information is collected. Your generated numbers, strings, colors, and names stay on your device. We believe that random generation tools should be fast, free, and completely private.
             </p>
             <p>
-              Our tools are designed to be intuitive and powerful. Each generator offers customizable options so you can tailor the output to your exact needs. Generate bulk results, copy them with a single click, track your history, and reset whenever you want. Whether you are a developer testing edge cases, a teacher running a classroom activity, a game master rolling for initiative, or a designer exploring color palettes, RandomGenerator.one is your go-to resource for all things random.
+              Our tools are designed to be intuitive and powerful. Each generator offers customizable options so you can tailor the output to your exact needs. Generate bulk results, copy them with a single click, track your history, and reset whenever you want. Whether you are a developer testing edge cases, a teacher running a classroom activity, a game master rolling for initiative, or a designer exploring color palettes, Randomize.one is your go-to resource for all things random.
             </p>
           </div>
         </div>

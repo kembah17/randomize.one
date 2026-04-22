@@ -2,9 +2,9 @@ export default function WebSiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'RandomGenerator.one',
+    name: 'Randomize.one',
     url: 'https://randomize.one',
-    description: 'Free online random generator tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names — all in your browser.',
+    description: 'Free online randomize tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names — all in your browser.',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://randomize.one/?q={search_term_string}',

@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About — RandomGenerator.one',
-  description: 'Learn about RandomGenerator.one, our mission to provide free, private, and secure random generator tools that run entirely in your browser.',
+  title: 'About — Randomize.one',
+  description: 'Learn about Randomize.one, our mission to provide free, private, and secure randomize tools that run entirely in your browser.',
   alternates: { canonical: 'https://randomize.one/about' },
   openGraph: {
-    title: 'About — RandomGenerator.one',
-    description: 'Learn about RandomGenerator.one and our mission to provide free, private random generator tools.',
+    title: 'About — Randomize.one',
+    description: 'Learn about Randomize.one and our mission to provide free, private randomize tools.',
     url: 'https://randomize.one/about',
   },
 };
@@ -15,20 +15,20 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl sm:text-4xl font-bold text-text mb-6">About RandomGenerator.one</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-text mb-6">About Randomize.one</h1>
 
       <div className="space-y-8">
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Our Mission</h2>
           <p className="text-text-light leading-relaxed">
-            RandomGenerator.one was created with a simple mission: to provide the best free random generator tools on the internet. We believe that everyone should have access to high-quality, cryptographically secure random generation without compromising their privacy, paying subscription fees, or dealing with intrusive advertisements that slow down the experience.
+            Randomize.one was created with a simple mission: to provide the best free randomize tools on the internet. We believe that everyone should have access to high-quality, cryptographically secure random generation without compromising their privacy, paying subscription fees, or dealing with intrusive advertisements that slow down the experience.
           </p>
         </section>
 
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">What We Offer</h2>
           <p className="text-text-light leading-relaxed mb-4">
-            Our suite of random generator tools covers the most common randomization needs:
+            Our suite of randomize tools covers the most common randomization needs:
           </p>
           <ul className="space-y-2 text-text-light">
             <li className="flex items-start gap-2">
@@ -61,7 +61,7 @@ export default function AboutPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Privacy First</h2>
           <p className="text-text-light leading-relaxed">
-            Privacy is not just a feature — it is the foundation of everything we build. Every tool on RandomGenerator.one runs entirely in your browser using client-side JavaScript. No data is ever sent to our servers. No results are logged. No personal information is collected. We do not use tracking cookies, fingerprinting, or any other surveillance technology. When you close your browser tab, all data is gone forever. Read our full <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link> for more details.
+            Privacy is not just a feature — it is the foundation of everything we build. Every tool on Randomize.one runs entirely in your browser using client-side JavaScript. No data is ever sent to our servers. No results are logged. No personal information is collected. We do not use tracking cookies, fingerprinting, or any other surveillance technology. When you close your browser tab, all data is gone forever. Read our full <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link> for more details.
           </p>
         </section>
 

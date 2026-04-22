@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — RandomGenerator.one',
-  description: 'Privacy policy for RandomGenerator.one. Learn how we protect your data. All tools run entirely in your browser with zero data collection.',
+  title: 'Privacy Policy — Randomize.one',
+  description: 'Privacy policy for Randomize.one. Learn how we protect your data. All tools run entirely in your browser with zero data collection.',
   alternates: { canonical: 'https://randomize.one/privacy' },
   openGraph: {
-    title: 'Privacy Policy — RandomGenerator.one',
-    description: 'Privacy policy for RandomGenerator.one. All tools run entirely in your browser with zero data collection.',
+    title: 'Privacy Policy — Randomize.one',
+    description: 'Privacy policy for Randomize.one. All tools run entirely in your browser with zero data collection.',
     url: 'https://randomize.one/privacy',
   },
 };
@@ -22,14 +22,14 @@ export default function PrivacyPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Overview</h2>
           <p className="text-text-light leading-relaxed">
-            RandomGenerator.one is committed to protecting your privacy. This privacy policy explains how we handle information when you use our website. The short version: we collect virtually nothing. All of our random generator tools run entirely in your browser, and no data you generate is ever sent to our servers.
+            Randomize.one is committed to protecting your privacy. This privacy policy explains how we handle information when you use our website. The short version: we collect virtually nothing. All of our randomize tools run entirely in your browser, and no data you generate is ever sent to our servers.
           </p>
         </section>
 
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Client-Side Processing</h2>
           <p className="text-text-light leading-relaxed">
-            All random generation tools on RandomGenerator.one operate entirely within your web browser using client-side JavaScript. This means that all numbers, strings, colors, coin flips, dice rolls, and name selections are generated locally on your device. No input data, generated results, or tool configurations are transmitted to any server. When you close your browser tab, all data is permanently erased from memory.
+            All random generation tools on Randomize.one operate entirely within your web browser using client-side JavaScript. This means that all numbers, strings, colors, coin flips, dice rolls, and name selections are generated locally on your device. No input data, generated results, or tool configurations are transmitted to any server. When you close your browser tab, all data is permanently erased from memory.
           </p>
         </section>
 
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Cookies</h2>
           <p className="text-text-light leading-relaxed">
-            RandomGenerator.one does not set any first-party cookies. We do not use cookies for tracking, analytics, or advertising purposes. If third-party advertising is displayed on our site, those ad networks may set their own cookies according to their respective privacy policies. You can control cookie behavior through your browser settings.
+            Randomize.one does not set any first-party cookies. We do not use cookies for tracking, analytics, or advertising purposes. If third-party advertising is displayed on our site, those ad networks may set their own cookies according to their respective privacy policies. You can control cookie behavior through your browser settings.
           </p>
         </section>
 
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
         <section className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-text mb-3">Contact Us</h2>
           <p className="text-text-light leading-relaxed">
-            If you have any questions about this privacy policy or our data practices, please contact us at <span className="text-primary">hello@randomize.one</span>. You can also visit our <Link href="/about" className="text-primary hover:underline">About page</Link> to learn more about RandomGenerator.one.
+            If you have any questions about this privacy policy or our data practices, please contact us at <span className="text-primary">hello@randomize.one</span>. You can also visit our <Link href="/about" className="text-primary hover:underline">About page</Link> to learn more about Randomize.one.
           </p>
         </section>
       </div>

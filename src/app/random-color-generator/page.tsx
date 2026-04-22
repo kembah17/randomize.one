@@ -80,7 +80,7 @@ export default function RandomColorGeneratorPage() {
 
           <h3 className="text-xl font-semibold text-text">Tips for Designers</h3>
           <p>
-            Use the random generator to break out of creative ruts and discover unexpected color combinations. Generate multiple palettes and compare them side by side using the history feature. For web projects, start with a complementary palette for your primary and accent colors, then use analogous generation to fill in supporting tones. Remember that the HSL format is particularly useful for creating variations of a color by adjusting just the lightness or saturation values while keeping the hue constant.
+            Use the randomize to break out of creative ruts and discover unexpected color combinations. Generate multiple palettes and compare them side by side using the history feature. For web projects, start with a complementary palette for your primary and accent colors, then use analogous generation to fill in supporting tones. Remember that the HSL format is particularly useful for creating variations of a color by adjusting just the lightness or saturation values while keeping the hue constant.
           </p>
 
           <h3 className="text-xl font-semibold text-text">Privacy and Performance</h3>
