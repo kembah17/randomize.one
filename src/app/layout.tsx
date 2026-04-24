@@ -2,8 +2,13 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+
+// GSC verification loaded from env
+const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
+  ...(gscVerification && { verification: { google: gscVerification } }),
   metadataBase: new URL('https://randomize.one'),
   title: {
     default: 'Randomize.one — Free Online Randomize Tools',
@@ -47,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-page text-text min-h-screen flex flex-col">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
