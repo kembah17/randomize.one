@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 const tools = [
-  { name: 'Random Number Generator', href: '/random-number-generator' },
-  { name: 'Random String Generator', href: '/random-string-generator' },
-  { name: 'Coin Flip Simulator', href: '/coin-flip' },
-  { name: 'Dice Roller', href: '/dice-roller' },
-  { name: 'Random Color Generator', href: '/random-color-generator' },
-  { name: 'Random Name Picker', href: '/random-name-picker' },
+  { name: 'Random Number Generator', href: '/random-number-generator', icon: '🎲' },
+  { name: 'Random String Generator', href: '/random-string-generator', icon: '🔤' },
+  { name: 'Coin Flip Simulator', href: '/coin-flip', icon: '🪙' },
+  { name: 'Dice Roller', href: '/dice-roller', icon: '🎯' },
+  { name: 'Random Color Generator', href: '/random-color-generator', icon: '🎨' },
+  { name: 'Random Name Picker', href: '/random-name-picker', icon: '👤' },
 ];
 
 export default function Footer() {
@@ -26,7 +26,7 @@ export default function Footer() {
               {tools.map((tool) => (
                 <li key={tool.href}>
                   <Link href={tool.href} className="text-sm transition-colors" style={{ color: 'var(--color-footer-muted)' }}>
-                    {tool.name}
+                    {tool.icon} {tool.name}
                   </Link>
                 </li>
               ))}

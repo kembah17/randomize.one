@@ -32,7 +32,7 @@ export default function Header() {
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="px-3 py-2 text-sm font-medium text-text-light hover:text-primary hover:bg-primary-light rounded-lg transition-colors"
+                className="px-3 py-2 text-sm font-semibold text-text-light hover:text-primary hover:bg-primary-light rounded-lg transition-colors"
               >
                 {tool.name}
               </Link>
@@ -64,7 +64,7 @@ export default function Header() {
                 key={tool.href}
                 href={tool.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 text-sm font-medium text-text-light hover:text-primary hover:bg-primary-light rounded-lg transition-colors"
+                className="block px-3 py-2 text-sm font-semibold text-text-light hover:text-primary hover:bg-primary-light rounded-lg transition-colors"
               >
                 {tool.name}
               </Link>

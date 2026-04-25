@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import AdSlot from '../components/ui/AdSlot';
 import WebSiteSchema from '../components/seo/WebSiteSchema';
@@ -7,64 +10,68 @@ const tools = [
     name: 'Random Number Generator',
     href: '/random-number-generator',
     description: 'Generate cryptographically secure random numbers within any range. Supports integers, decimals, and bulk generation.',
-    icon: '#',
+    icon: '🎲',
   },
   {
     name: 'Random String Generator',
     href: '/random-string-generator',
     description: 'Create random strings with custom character sets. Perfect for passwords, tokens, and unique identifiers.',
-    icon: 'Aa',
+    icon: '🔤',
   },
   {
     name: 'Coin Flip Simulator',
     href: '/coin-flip',
     description: 'Flip virtual coins with animated visuals and real-time statistics tracking for heads and tails.',
-    icon: '⚡',
+    icon: '🪙',
   },
   {
     name: 'Dice Roller',
     href: '/dice-roller',
     description: 'Roll dice with multiple sides and custom notation. Supports d4, d6, d8, d10, d12, d20 and modifiers.',
-    icon: '⬡',
+    icon: '🎯',
   },
   {
     name: 'Random Color Generator',
     href: '/random-color-generator',
     description: 'Generate random colors in HEX, RGB, and HSL. Create complementary, analogous, and triadic palettes.',
-    icon: '◉',
+    icon: '🎨',
   },
   {
     name: 'Random Name Picker',
     href: '/random-name-picker',
     description: 'Pick random winners from a list of names with animated selection. Great for raffles and giveaways.',
-    icon: '★',
+    icon: '👤',
   },
 ];
 
 export default function HomePage() {
+  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <WebSiteSchema />
       <AdSlot slot="leaderboard" />
 
       <section className="text-center py-12 sm:py-16">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text mb-4">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4" style={{ color: 'var(--color-text-heading)' }}>
           Free Randomize Tools
         </h1>
-        <p className="text-lg sm:text-xl text-text-light max-w-3xl mx-auto mb-8">
+        <p className="text-lg sm:text-xl max-w-3xl mx-auto mb-8" style={{ color: 'var(--color-text-secondary)' }}>
           Generate random numbers, strings, colors, flip coins, roll dice, and pick random names.
           All tools run entirely in your browser — fast, private, and secure.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
             href="/random-number-generator"
-            className="px-6 py-3 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm"
+            className="px-6 py-3 font-semibold rounded-lg transition-all duration-200"
+            style={{ backgroundColor: 'var(--color-brand)', color: '#FFFFFF' }}
           >
             Get Started
           </Link>
           <a
             href="#tools"
-            className="px-6 py-3 bg-surface border border-border text-text font-semibold rounded-lg hover:border-primary transition-colors"
+            className="px-6 py-3 font-semibold rounded-lg transition-all duration-200"
+            style={{ backgroundColor: 'var(--color-bg-card)', color: 'var(--color-brand)', border: '2px solid var(--color-brand)' }}
           >
             Browse Tools
           </a>
@@ -72,21 +79,27 @@ export default function HomePage() {
       </section>
 
       <section id="tools" className="py-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-text text-center mb-8">All Randomize Tools</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8" style={{ color: 'var(--color-text-heading)' }}>All Randomize Tools</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tools.map((tool) => (
             <Link
               key={tool.href}
               href={tool.href}
-              className="group block bg-surface border border-border rounded-xl p-6 hover:border-primary hover:shadow-lg transition-all shadow-sm"
+              className="block rounded-xl p-6 transition-all duration-200 no-underline"
+              style={{
+                backgroundColor: 'var(--color-bg-card)',
+                border: hoveredHref === tool.href ? '2px solid var(--color-brand)' : '2px solid var(--color-border)',
+                boxShadow: hoveredHref === tool.href ? 'var(--shadow-lg)' : 'var(--shadow-card)',
+                transform: hoveredHref === tool.href ? 'translateY(-2px)' : 'translateY(0)',
+              }}
+              onMouseEnter={() => setHoveredHref(tool.href)}
+              onMouseLeave={() => setHoveredHref(null)}
             >
-              <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center text-primary text-xl font-bold mb-4 group-hover:bg-primary group-hover:text-primary-text transition-colors">
-                {tool.icon}
-              </div>
-              <h3 className="text-lg font-semibold text-text mb-2 group-hover:text-primary transition-colors">
+              <div className="text-4xl mb-4">{tool.icon}</div>
+              <h3 className="text-lg font-semibold mb-2 transition-colors" style={{ color: hoveredHref === tool.href ? 'var(--color-brand)' : 'var(--color-text-heading)' }}>
                 {tool.name}
               </h3>
-              <p className="text-sm text-text-light leading-relaxed">{tool.description}</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{tool.description}</p>
             </Link>
           ))}
         </div>
@@ -95,14 +108,14 @@ export default function HomePage() {
       <AdSlot slot="mid-content" />
 
       <section className="py-12">
-        <div className="bg-surface border border-border rounded-xl p-8 shadow-sm">
-          <h2 className="text-2xl font-bold text-text mb-4">About Our Randomize Tools</h2>
-          <div className="space-y-4 text-text-light leading-relaxed">
+        <div className="rounded-xl p-8" style={{ backgroundColor: 'var(--color-bg-card)', border: '2px solid var(--color-border)', boxShadow: 'var(--shadow-card)' }}>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--color-text-heading)' }}>About Our Randomize Tools</h2>
+          <div className="space-y-4 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
             <p>
               Randomize.one provides a comprehensive suite of free online randomize tools designed for everyday use. Whether you need to generate random numbers for statistical sampling, create secure random strings for passwords, flip a coin to make a quick decision, roll dice for your tabletop game, generate random colors for your design project, or pick a random name for a raffle — we have you covered.
             </p>
             <p>
-              All of our tools use the Web Crypto API (<code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">crypto.getRandomValues()</code>) to generate cryptographically secure random values. Unlike many randomize websites that rely on <code className="bg-page px-1.5 py-0.5 rounded text-sm font-mono text-text">Math.random()</code>, which produces pseudo-random numbers that can be predicted, our tools leverage the operating system's entropy source to produce truly unpredictable results. This makes our generators suitable for security-sensitive applications like password generation and token creation.
+              All of our tools use the Web Crypto API (<code style={{ backgroundColor: 'var(--color-bg-secondary)', color: 'var(--color-text-primary)', padding: '0.125rem 0.375rem', borderRadius: '0.25rem', fontSize: '0.875rem', fontFamily: 'monospace' }}>crypto.getRandomValues()</code>) to generate cryptographically secure random values. Unlike many randomize websites that rely on <code style={{ backgroundColor: 'var(--color-bg-secondary)', color: 'var(--color-text-primary)', padding: '0.125rem 0.375rem', borderRadius: '0.25rem', fontSize: '0.875rem', fontFamily: 'monospace' }}>Math.random()</code>, which produces pseudo-random numbers that can be predicted, our tools leverage the operating system&apos;s entropy source to produce truly unpredictable results. This makes our generators suitable for security-sensitive applications like password generation and token creation.
             </p>
             <p>
               Privacy is at the core of everything we build. Every tool on Randomize.one runs entirely in your browser. No data is ever sent to our servers, no results are logged, and no personal information is collected. Your generated numbers, strings, colors, and names stay on your device. We believe that random generation tools should be fast, free, and completely private.
