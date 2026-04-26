@@ -28,7 +28,7 @@ export default function Header() {
               <circle cx="12" cy="24" r="2.5" fill="white"/>
               <circle cx="24" cy="24" r="2.5" fill="white"/>
             </svg>
-            <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>randomize<span style={{ color: 'var(--color-primary)' }}>.one</span></span>
+            <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>randomize<span style={{ color: 'var(--color-text-heading)' }}>.one</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
