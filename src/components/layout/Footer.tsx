@@ -15,7 +15,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-3" style={{ color: 'var(--color-footer-text)' }}>Randomize.one</h3>
+            <h3 className="font-bold text-lg mb-3 flex items-center gap-2" style={{ color: 'var(--color-footer-text)' }}>
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+                <circle cx="12" cy="12" r="2.5" fill="white"/>
+                <circle cx="24" cy="12" r="2.5" fill="white"/>
+                <circle cx="18" cy="18" r="2.5" fill="white"/>
+                <circle cx="12" cy="24" r="2.5" fill="white"/>
+                <circle cx="24" cy="24" r="2.5" fill="white"/>
+              </svg>
+              randomize.one
+            </h3>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--color-footer-muted)' }}>
               Free online randomize tools. All tools run entirely in your browser &mdash; no data is ever sent to a server. Fast, private, and secure.
             </p>
@@ -41,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 text-center text-sm" style={{ borderTop: '1px solid var(--color-footer-border)', color: 'var(--color-footer-muted)' }}>
-          &copy; {new Date().getFullYear()} Randomize.one. All rights reserved. All processing happens in your browser.
+          &copy; {new Date().getFullYear()} randomize.one. All rights reserved. All processing happens in your browser.
         </div>
       </div>
     </footer>

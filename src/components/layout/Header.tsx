@@ -19,12 +19,16 @@ export default function Header() {
     <header className="bg-surface border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary hover:opacity-80 transition-opacity">
-            <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="8" fill="currentColor" />
-              <text x="16" y="22" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">?</text>
+          <Link href="/" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+              <circle cx="12" cy="12" r="2.5" fill="white"/>
+              <circle cx="24" cy="12" r="2.5" fill="white"/>
+              <circle cx="18" cy="18" r="2.5" fill="white"/>
+              <circle cx="12" cy="24" r="2.5" fill="white"/>
+              <circle cx="24" cy="24" r="2.5" fill="white"/>
             </svg>
-            RandomGen
+            <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>randomize<span style={{ color: 'var(--color-primary)' }}>.one</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
