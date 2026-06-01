@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Randomize.one',
     title: 'Randomize.one — Free Online Randomize Tools',
     description: 'Free online randomize tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Randomize' }],
   },
   twitter: {
     card: 'summary_large_image',

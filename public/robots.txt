@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://randomize.one
-
-# Sitemaps
-Sitemap: https://randomize.one/sitemap.xml
