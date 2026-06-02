@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://randomize.one',
+  siteUrl: 'https://www.randomize.one',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: './out',

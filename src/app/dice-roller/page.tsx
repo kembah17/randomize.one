@@ -8,11 +8,11 @@ import RelatedTools from '../../components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Dice Roller — Free Online Dice Rolling Simulator',
   description: 'Roll virtual dice with multiple sides (d4, d6, d8, d10, d12, d20). Supports custom dice notation, modifiers, statistics tracking, and roll history. Free and private.',
-  alternates: { canonical: 'https://randomize.one/dice-roller' },
+  alternates: { canonical: 'https://www.randomize.one/dice-roller' },
   openGraph: {
     title: 'Dice Roller — Free Online Dice Rolling Simulator',
     description: 'Roll virtual dice with multiple sides and custom notation. Supports d4, d6, d8, d10, d12, d20 with modifiers and statistics.',
-    url: 'https://randomize.one/dice-roller',
+    url: 'https://www.randomize.one/dice-roller',
   },
 };
 

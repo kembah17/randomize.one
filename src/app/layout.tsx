@@ -9,7 +9,7 @@ const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
   ...(gscVerification && { verification: { google: gscVerification } }),
-  metadataBase: new URL('https://randomize.one'),
+  metadataBase: new URL('https://www.randomize.one'),
   title: {
     default: 'Randomize.one — Free Online Randomize Tools',
     template: '%s | Randomize.one',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://randomize.one',
+    url: 'https://www.randomize.one',
     siteName: 'Randomize.one',
     title: 'Randomize.one — Free Online Randomize Tools',
     description: 'Free online randomize tools. Generate random numbers, strings, colors, flip coins, roll dice, and pick random names.',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description: 'Free online randomize tools. All processing happens in your browser.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://randomize.one' },
+  alternates: { canonical: 'https://www.randomize.one' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
