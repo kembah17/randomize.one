@@ -64,7 +64,7 @@ export default function HomePage() {
           <Link
             href="/random-number-generator"
             className="px-6 py-3 font-semibold rounded-lg transition-all duration-200"
-            style={{ backgroundColor: 'var(--color-brand)', color: '#FFFFFF' }}
+            style={{ backgroundColor: 'var(--color-primary)', color: '#FFFFFF' }}
           >
             Get Started
           </Link>
