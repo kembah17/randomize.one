@@ -26,8 +26,8 @@ export default function CopyButton({ text, label = 'Copy' }: { text: string; lab
       onClick={handleCopy}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
         copied
-          ? 'bg-success text-primary-text'
-          : 'bg-primary text-primary-text hover:bg-primary-hover'
+          ? 'bg-success text-primary-text dark:text-white'
+          : 'bg-primary text-primary-text dark:text-white hover:bg-primary-hover'
       }`}
     >
       {copied ? (

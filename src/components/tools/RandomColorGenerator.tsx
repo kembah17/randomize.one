@@ -126,7 +126,7 @@ export default function RandomColorGenerator() {
     <div className="space-y-6">
       <div className="bg-surface border border-border rounded-xl p-6 shadow-sm">
         <div className="flex flex-wrap gap-3">
-          <button onClick={generateSingle} className="px-4 py-2.5 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm">
+          <button onClick={generateSingle} className="px-4 py-2.5 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm">
             Random Color
           </button>
           <button onClick={generateRandomPalette} className="px-4 py-2.5 bg-page border border-border text-text font-semibold rounded-lg hover:border-primary transition-colors">

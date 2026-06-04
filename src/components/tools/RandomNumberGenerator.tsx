@@ -144,7 +144,7 @@ export default function RandomNumberGenerator() {
         <div className="flex gap-3 mt-6">
           <button
             onClick={generate}
-            className="px-6 py-2.5 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm"
+            className="px-6 py-2.5 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm"
           >
             Generate
           </button>

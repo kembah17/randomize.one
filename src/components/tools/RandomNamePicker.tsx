@@ -143,7 +143,7 @@ export default function RandomNamePicker() {
           <button
             onClick={pick}
             disabled={animating || names.length === 0}
-            className="px-6 py-2.5 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
+            className="px-6 py-2.5 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
           >
             {animating ? 'Picking...' : 'Pick Winner' + (numWinners > 1 ? 's' : '')}
           </button>
@@ -165,7 +165,7 @@ export default function RandomNamePicker() {
                 key={i}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                   highlightIndex === i
-                    ? 'bg-primary text-primary-text scale-110'
+                    ? 'bg-primary text-primary-text dark:text-white scale-110'
                     : winners.includes(name)
                     ? 'bg-primary-light text-primary border border-primary'
                     : 'bg-page text-text border border-border-light'
@@ -187,7 +187,7 @@ export default function RandomNamePicker() {
             {winners.map((winner, i) => (
               <div key={i} className="flex items-center justify-between bg-primary-light rounded-lg px-4 py-3 pulse-result">
                 <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 bg-primary text-primary-text rounded-full flex items-center justify-center font-bold text-sm">
+                  <span className="w-8 h-8 bg-primary text-primary-text dark:text-white rounded-full flex items-center justify-center font-bold text-sm">
                     {i + 1}
                   </span>
                   <span className="text-lg font-semibold text-text">{winner}</span>

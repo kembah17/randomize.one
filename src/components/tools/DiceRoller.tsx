@@ -120,7 +120,7 @@ export default function DiceRoller() {
                   onClick={() => setSides(s)}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     sides === s
-                      ? 'bg-primary text-primary-text'
+                      ? 'bg-primary text-primary-text dark:text-white'
                       : 'bg-page border border-border text-text hover:border-primary'
                   }`}
                 >
@@ -144,7 +144,7 @@ export default function DiceRoller() {
             />
             <button
               onClick={rollFromNotation}
-              className="px-4 py-2 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors"
+              className="px-4 py-2 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors"
             >
               Roll Notation
             </button>
@@ -156,7 +156,7 @@ export default function DiceRoller() {
           <button
             onClick={() => roll()}
             disabled={animating}
-            className="px-6 py-2.5 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
+            className="px-6 py-2.5 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
           >
             {animating ? 'Rolling...' : `Roll ${numDice}d${sides}`}
           </button>

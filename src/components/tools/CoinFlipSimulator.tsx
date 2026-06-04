@@ -76,7 +76,7 @@ export default function CoinFlipSimulator() {
           <button
             onClick={flip}
             disabled={animating}
-            className="px-6 py-2.5 bg-primary text-primary-text font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
+            className="px-6 py-2.5 bg-primary text-primary-text dark:text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm disabled:opacity-50"
           >
             {animating ? 'Flipping...' : 'Flip Coin' + (numCoins > 1 ? 's' : '')}
           </button>
