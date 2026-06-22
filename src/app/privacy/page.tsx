@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy — Randomize.one',
   description: 'Privacy policy for Randomize.one. Learn how we protect your data. All tools run entirely in your browser with zero data collection.',
-  alternates: { canonical: 'https://www.randomize.one/privacy' },
+  alternates: { canonical: 'https://randomize.one/privacy' },
   openGraph: {
     title: 'Privacy Policy — Randomize.one',
     description: 'Privacy policy for Randomize.one. All tools run entirely in your browser with zero data collection.',
-    url: 'https://www.randomize.one/privacy',
+    url: 'https://randomize.one/privacy',
   },
 };
 
